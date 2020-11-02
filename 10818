@@ -1,15 +1,15 @@
-#첫 번째 방법 - 아주 오래 걸림
+#첫 번째 방법
 n = input()
 arr = list(map(int,input().split()))
 print('{} {}'.format(min(arr), max(arr)))
 
-#두 번째 방법 - 1번과 같은 시간이 걸림
+#두 번째 방법
 n = input()
 arr = list(map(int,input().split()))
 if int(n) == len(arr):
     print(min(arr), max(arr))
     
-# 세 번째 방법 - 2번과 같은 시간이 걸림    
+# 세 번째 방법   
 n = int(input())
 arr = list(map(int,input().split()))
 print(min(arr), max(arr))
