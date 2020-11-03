@@ -1,0 +1,7 @@
+a=int(input())
+b=int(input())
+c=int(input())# a*b*c를 위해 곱하는 수는 각각 int로
+f=str(a*b*c) # 리스트 안에 넣기 위해 f를 문자로
+result = list(f) # result는 f의 리스트화이다.
+for i in range(10): # 0~9
+    print(result.count(str(i))) # f 안의 숫자들을 세서 리스트에 넣어라
