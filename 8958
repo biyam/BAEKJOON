@@ -1,0 +1,12 @@
+a = int(input()) #5를 입력받음
+for i in range(a): #a번 입력받음
+    b = input() #다시 입력받음
+    score = 0 #0으로 초기화
+    scoresum = 0 #0으로 초기화
+    for j in b: #input의 원소 j
+        if j  == 'O': #j가 O이면
+            score = score + 1 #O이 1개: 1, O이 2개: 2, O이 3개: 3
+        if j == 'X': #j가 X면 세지 않음
+            score = 0
+        scoresum = scoresum + score #score끼리 더해줌. 
+    print(scoresum)
