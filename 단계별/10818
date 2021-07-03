@@ -1,0 +1,16 @@
+# N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오.
+#첫 번째 방법
+n = input()
+arr = list(map(int,input().split()))
+print('{} {}'.format(min(arr), max(arr)))
+
+#두 번째 방법
+n = input()
+arr = list(map(int,input().split()))
+if int(n) == len(arr):
+    print(min(arr), max(arr))
+    
+# 세 번째 방법   
+n = int(input())
+arr = list(map(int,input().split()))
+print(min(arr), max(arr))

@@ -1,0 +1,18 @@
+''' "OOXXOXXOOO"와 같은 OX퀴즈의 결과가 있다. O는 문제를 맞은 것이고, X는 문제를 틀린 것이다. 
+문제를 맞은 경우 그 문제의 점수는 그 문제까지 연속된 O의 개수가 된다. 
+예를 들어, 10번 문제의 점수는 3이 된다.
+"OOXXOXXOOO"의 점수는 1+2+0+0+1+0+0+1+2+3 = 10점이다.
+OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작성하시오'''
+
+a = int(input()) #5를 입력받음
+for i in range(a): #a번 입력받음
+    b = input() #다시 입력받음
+    score = 0 #0으로 초기화
+    scoresum = 0 #0으로 초기화
+    for j in b: #input의 원소 j
+        if j  == 'O': #j가 O이면
+            score = score + 1 #O이 1개: 1, O이 2개: 2, O이 3개: 3
+        if j == 'X': #j가 X면 세지 않음
+            score = 0
+        scoresum = scoresum + score #score끼리 더해줌. 
+    print(scoresum)
