@@ -24,12 +24,13 @@ def Bfs(graph, v, visited):
     visited[v] = True
     while queue:
         pop = queue.popleft()
-        print(pop, end=' ')
+        #print(pop, end=' ')
         for i in graph[pop]:
             if not visited[i]:
                 queue.append(i)
+                print(queue)
                 visited[i] = True
 
-Dfs(graph, v, visited)
-print()
+#Dfs(graph, v, visited)
+#print()
 Bfs(graph, v, visited)
